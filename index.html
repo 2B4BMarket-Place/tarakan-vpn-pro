@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarakan VPN — быстрый и свободный</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="vpn-card">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-bolt"></i> Tarakan VPN
+            </div>
+            <div class="premium-actions">
+                <button class="btn-gopremium" id="goPremiumBtn">
+                    <i class="fas fa-crown"></i> GoPremium
+                </button>
+                <button class="btn-trial" id="trialBtn">
+                    <i class="fas fa-calendar-alt"></i> Start free 7 days trial
+                </button>
+            </div>
+        </div>
+
+        <!-- Search -->
+        <div class="search-section">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search for country or city">
+                <button id="searchBtn"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Optimal location -->
+        <div class="optimal-chip" id="optimalLocation">
+            <span>⚡ Optimal location:</span>
+            <span class="location"><i class="fas fa-map-pin"></i> Italy-Milan</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <!-- Recommended locations -->
+        <div class="rec-title">Recommended locations:</div>
+        <div class="recommended-row">
+            <div class="rec-card" data-country="USA" data-city="New York">
+                <i class="fas fa-star"></i> USA-NewYork
+            </div>
+            <span class="rec-or">or</span>
+            <div class="rec-card" data-country="Canada" data-city="Toronto">
+                <i class="fas fa-leaf"></i> Canada
+            </div>
+        </div>
+
+        <!-- Select location -->
+        <div class="select-location-title">
+            <i class="fas fa-globe-americas"></i> Select location
+        </div>
+
+        <!-- Countries grid -->
+        <div id="countriesContainer" class="countries-grid"></div>
+
+        <!-- Key input area -->
+        <div class="key-area">
+            <i class="fas fa-key"></i>
+            <input type="text" id="vpnKeyInput" placeholder="Enter VPN key">
+            <button class="btn-activate" id="activateKeyBtn">
+                <i class="fas fa-lock-open"></i> Activate
+            </button>
+        </div>
+
+        <!-- Status message -->
+        <div id="statusMessage" class="status-message">
+            <i class="fas fa-check-circle"></i> <span id="statusText"></span>
+        </div>
+
+        <!-- Footer -->
+        <div class="encryption-footer">
+            <span><i class="fas fa-shield-alt"></i> Best-in-class AES256-bit encryption</span>
+            <span><i class="fas fa-server"></i> 25+ countries · no lag</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
